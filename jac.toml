@@ -1,0 +1,39 @@
+[project]
+name = "dayblock"
+version = "0.1.0"
+description = "Dayblock: a personal day planner with auto-scheduled time blocks"
+default-app = "web"
+jac-version = "==0.37.23"
+
+[apps]
+[apps.web]
+kind = "web-app"
+entry-point = "web"
+
+[apps.mobile]
+kind = "mobile"
+entry-point = "mobile"
+
+[apps.cli]
+kind = "cli"
+entry-point = "cli"
+
+[apps.planner]
+kind = "service"
+entry-point = "core.planner"
+
+[dependencies]
+[dependencies.npm]
+react-native-web = "^0.21.2"
+
+[test]
+directories = ["core"]
+
+[apps.cli.check]
+[apps.cli.check.lint]
+ignore = ["no-print"]
+
+[client]
+[client.app_meta_data]
+title = "Dayblock"
+description = "Plan your day in blocks: quick-add tasks, pin fixed commitments, auto-schedule the rest."
