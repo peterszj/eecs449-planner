@@ -1,7 +1,7 @@
 # Dayblock: plan your day in blocks
 
 **EECS 449 · Assignment 1: Personal Planning App in Jac**
-**Name:** Zhengjia Sun· **UMID:** 21579035
+**Name:** Zhengjia Sun · **UMID:** 21579035
 
 Dayblock is a personal day planner built around one idea: **your fixed commitments
 (classes, meals, the gym) are the skeleton of the day, and everything else should be
@@ -95,7 +95,7 @@ call the same service over the same data.
 embedded Postgres. No API keys are needed.
 
 ```bash
-git clone <this repo> && cd <repo>
+git clone https://github.com/peterszj/eecs449-planner && cd eecs449-planner
 jac install        # optional: fetches npm deps (jac run also does this on first start)
 ```
 
